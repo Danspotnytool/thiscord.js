@@ -12,10 +12,17 @@
  - [ ] Documentation
  - [ ] All events
 
+<h2>Installation</h2>
+<p><b>Node.js 16.6.0 or newer is required</b></p>
+
+```sh-session
+npm i @danspotnytool/thiscord.js
+```
+
 <h2>Example</h2>
 
 ```js
-const ThisCord = require('thiscord.js');
+const ThisCord = require('@danspotnytool/thiscord.js'); // Because npm won't allow me to use `thiscord,js`
 const client = new ThisCord.Client();
 
 client.on('ready', () => {

@@ -1,6 +1,6 @@
 {
-  "name": "thiscord",
-  "version": "1.0.0",
+  "name": "@danspotnytool/thiscord.js",
+  "version": "1.0.1",
   "description": "A simple JavaScript library that listens to Discord API Gateway",
   "main": "./src/index.js",
   "scripts": {
@@ -10,7 +10,6 @@
   "author": "Danspotnytool",
   "license": "ISC",
   "dependencies": {
-    "websocket": "^1.0.34",
     "ws": "^8.7.0"
   },
   "directories": {
@@ -18,5 +17,13 @@
   },
   "devDependencies": {
     "jsdoc": "^3.6.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danspotnytool/thiscord.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Danspotnytool/thiscord.js/issues"
+  },
+  "homepage": "https://github.com/Danspotnytool/thiscord.js#readme"
 }

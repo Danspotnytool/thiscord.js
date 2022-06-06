@@ -17,7 +17,7 @@ class Client extends EventEmitter {
      * @param {string} options.browser.device - The device of the browser (Optional)
      * 
      * @example
-     * const ThisCord = require('thiscord.js');
+     * const ThisCord = require('@danspotnytool/thiscord.js');
      * const client = new ThisCord.Client();
      * 
      * client.on('ready', () => {
