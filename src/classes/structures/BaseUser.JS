@@ -35,33 +35,33 @@ class BaseUser {
     constructor(me, data, client) {
         this.me = me;
 
-        this.verified = data.verified;
+        if (data.verified) this.verified = data.verified;
         this.username = data.username;
         this.discriminator = data.discriminator;
         this.id = data.id;
         this.tag = `${this.username}#${this.discriminator}`;
 
-        this.purchasedFlags = data.purchased_flags;
-        this.publicFlags = data.public_flags;
-        this.premiumUsageFlags = data.premium_usage_flags;
-        this.premiumType = data.premium_type;
-        this.premium = data.premium;
+        if (data.purchased_flags) this.purchasedFlags = data.purchased_flags;
+        if (data.public_flags) this.publicFlags = data.public_flags;
+        if (data.premium_usage_flags) this.premiumUsageFlags = data.premium_usage_flags;
+        if (data.premium_type) this.premiumType = data.premium_type;
+        if (data.premium) this.premium = data.premium;
 
-        this.phone = data.phone;
-        this.nsfwAllowed = data.nsfw_allowed;
-        this.mobile = data.mobile;
-        this.mfaEnabled = data.mfa_enabled;
-        this.flags = data.flags;
+        if (data.phone) this.phone = data.phone;
+        if (data.nsfw_allowed) this.nsfwAllowed = data.nsfw_allowed;
+        if (data.mobile) this.mobile = data.mobile;
+        if (data.mfa_enabled) this.mfaEnabled = data.mfa_enabled;
+        if (data.flags) this.flags = data.flags;
 
-        this.email = data.email;
-        this.desktop = data.desktop;
+        if (data.email) this.email = data.email;
+        if (data.desktop) this.desktop = data.desktop;
 
-        this.bio = data.bio;
-        this.bannerColor = data.banner_color;
-        this.banner = data.banner;
-        this.avatarDecoration = data.avatar_decoration;
-        this.avatar = data.avatar;
-        this.accentColor = data.accent_color;
+        if (data.bio) this.bio = data.bio;
+        if (data.banner_color) this.bannerColor = data.banner_color;
+        if (data.banner) this.banner = data.banner;
+        if (data.avatar_decoration) this.avatarDecoration = data.avatar_decoration;
+        if (data.avatar) this.avatar = data.avatar;
+        if (data.accent_color) this.accentColor = data.accent_color;
     };
 };
 
