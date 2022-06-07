@@ -3,6 +3,10 @@
 const WebSocket = require('ws');
 const EventEmitter = require('node:events');
 
+/**
+ * @typedef {["ready" | "messageCreate", ...any[]]} clientEvents
+ */
+
 class Client extends EventEmitter {
     /**
      * The Client class
@@ -15,6 +19,8 @@ class Client extends EventEmitter {
      * @param {string} options.browser.os - The OS of the browser (Optional)
      * @param {string} options.browser.name - The name of the browser (Optional)
      * @param {string} options.browser.device - The device of the browser (Optional)
+     * 
+     * 
      * 
      * @example
      * const ThisCord = require('@danspotnytool/thiscord.js');
@@ -36,6 +42,24 @@ class Client extends EventEmitter {
         // this.browser = options.browser || {};
 
         this.ws = null;
+    };
+
+    /**
+     * @param {clientEvents} args
+     */
+    addListener(...args) {
+        // @ts-ignore
+        super.addListener(...args);
+        return this;
+    };
+
+    /**
+     * @param {clientEvents} args
+     */
+    on(...args) {
+        // @ts-ignore
+        super.on(...args);
+        return this;
     };
 
     /**
