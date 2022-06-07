@@ -75,6 +75,7 @@ class Client extends EventEmitter {
                 op: 2,
                 d: {
                     token: this.token,
+                    intents: 131071,
                     properties: {
                         $os: 'windows',
                         $browser: 'chrome',
