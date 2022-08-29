@@ -6,15 +6,13 @@
 <h2>Checklist</h2>
 
  - [X] Listen to Discord API Gateway
- - [X] Recieve events (MESSAGE_CREATE, READY, etc...)
+ - [X] Receive events (MESSAGE_CREATE, READY, etc...)
  - [ ] Validate token before opening a connection
  - [ ] Check if the token is for a bot or a user account
  - [ ] Documentation
  - [ ] All events
 
 <h2>Installation</h2>
-<p><b>Node.js 16.6.0 or newer is required</b></p>
-
 ```sh-session
 npm i @danspotnytool/thiscord.js
 ```

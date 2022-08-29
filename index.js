@@ -1,4 +1,3 @@
-
 /**
  * @author Danspotnytool
  * @description A simple JavaScript library that listens to Discord API Gateway
