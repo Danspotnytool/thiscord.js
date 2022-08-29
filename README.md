@@ -13,6 +13,7 @@
  - [ ] All events
 
 <h2>Installation</h2>
+
 ```sh-session
 npm i @danspotnytool/thiscord.js
 ```
